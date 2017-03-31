@@ -7,6 +7,7 @@ You can read a quickstart guide for this sample [here](https://auth0.com/docs/qu
 Run the sample by doing the following:
 
 1. Make sure that `web.config` and `index.html` contains your credentials. You can find your credentials in the settings section of your Auth0 Client.
-2. Hit F5 to start your WCF service app.
+2. Also make sure that `http://localhost:49732/` is registered as `Allowed Callback URLs` in client settings.
+3. Hit F5 to start your WCF service app.
 
 Go to `http://localhost:49732/` and you'll see the app running :).
