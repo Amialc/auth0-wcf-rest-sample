@@ -14,7 +14,7 @@
     </div>
 
     <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>    
-    <script src="//cdn.auth0.com/js/lock/10.6/lock.min.js"></script>
+    <script src="//cdn.auth0.com/js/lock/10.14/lock.min.js"></script>
    
     <script type="text/javascript">
         // every request send to a service will have the Authorization header with a token
@@ -42,7 +42,7 @@
 
         lock.on("authenticated", function (authResult) {
             // Use the token in authResult to getProfile() and save it to localStorage
-            lock.getProfile(authResult.idToken, function (error, profile) {
+            lock.getUserInfo(authResult.accessToken, function (error, profile) {
                 if (error) {
                     // Handle error
                     return;
